@@ -39,7 +39,6 @@ namespace Paltineanu_Vlad_Lab2.Pages.Books
 
             _context.Book.Add(Book);
             await _context.SaveChangesAsync();
-
             return RedirectToPage("./Index");
         }
     }

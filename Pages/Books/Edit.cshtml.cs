@@ -57,12 +57,6 @@ namespace Paltineanu_Vlad_Lab2.Pages.Books
 
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BookExists(Book.ID))
-                {
                     return NotFound();
                 }
                 else
